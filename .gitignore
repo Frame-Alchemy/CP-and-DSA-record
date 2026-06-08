@@ -1,0 +1,7 @@
+# Ignore compiled executable files (they are huge and useless on GitHub)
+*.exe
+*.out
+a.out
+
+# Ignore the background folder created by the CPH extension
+.cph/
