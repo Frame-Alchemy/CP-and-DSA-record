@@ -1,3 +1,5 @@
+//Simple
+// Logic: game goes on until "" / "111...." / "000..." type is left. 
 #include <bits/stdc++.h>
 using namespace std; 
 
