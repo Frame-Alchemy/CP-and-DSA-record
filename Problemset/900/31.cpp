@@ -1,9 +1,11 @@
-// Simple 
+// Simple Maths
 #include <bits/stdc++.h>
 using namespace std; 
 
+using ll = long long;
+
 void solve() {
-    int n, moves = 0;
+    ll n, moves = 0;
     cin>>n;
     bool possible = true;
     while(n != 1){
