@@ -34,14 +34,48 @@
 // }
 
 // Print linearly from n to 1
+// #include <bits/stdc++.h>
+// using namespace std; 
+
+// void solve(int i, int n) {
+//     if(i<1) return;
+//     cout<<i;
+//     i--;
+//     solve(i, n);
+// }
+// int main() {
+//     ios_base::sync_with_stdio(false);
+//     cin.tie(NULL);
+//     int n;
+//     cin >> n;
+//     solve(n, n);
+// }
+
+// Find factorial of a given no. n
+// #include <bits/stdc++.h>
+// using namespace std; 
+// void solve(int n, int fac) {
+//     if(n==1){
+//         cout<<fac;
+//         return;
+//     }
+//     else return solve(n-1, fac *= n);
+// }
+// int main() {
+//     ios_base::sync_with_stdio(false);
+//     cin.tie(NULL);
+//     int n;
+//     cin>>n;
+//     solve(n, 1);
+//     return 0;
+// }
+
+// Reverse an array of numbers
 #include <bits/stdc++.h>
 using namespace std; 
 
-void solve(int i, int n) {
-    if(i<1) return;
-    cout<<i;
-    i--;
-    solve(i, n);
+void solve(int arr[], int n) {
+    
 }
 
 int main() {
@@ -49,5 +83,10 @@ int main() {
     cin.tie(NULL);
     int n;
     cin >> n;
-    solve(n, n);
+    int a[n];
+    for(int i=0; i < n; i++){
+        cin>>a[i];
+    }
+
+    return 0;
 }

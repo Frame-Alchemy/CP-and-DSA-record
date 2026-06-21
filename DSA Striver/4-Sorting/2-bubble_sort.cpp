@@ -1,3 +1,7 @@
+//Chooses wo consecutive no. pair one after 
+// other and sorts them making the largest term 
+// move towards the end.
+// TC & SC - O(n^2) 
 #include <bits/stdc++.h>
 using namespace std;
 

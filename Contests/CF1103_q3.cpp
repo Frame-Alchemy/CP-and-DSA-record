@@ -4,20 +4,20 @@ using namespace std;
 void solve() {
     int a, b, x;
     cin>>a>>b>>x;
-    int dis1, dis2, steps=0, dupa=a, dupb=b;
-    while(a != b){
-        dis1=abs(a-b);
-        dupa=a, dupb=b;
-        if(a>b) dupa /=x;
-        else dupb /=x;
-        dis2=abs(dupa-dupb);
-        if(dis1>dis2 && dis2>2){
-            a=dupa,b=dupb;
-            steps++;
+    int diff1=0, diff2=0, moves=0;
+    while(a!=b){
+        if(a>b) swap(a,b);
+        diff1 = b-a;
+        int dup = b;
+        b /= x;
+        diff2 = abs(b-a);
+        if(diff2 < diff1) moves++;
+        else{
+            b= dup++;
+            moves++;
         }
     }
-
-
+    cout<<moves<<'\n';
 }
 
 int main() {

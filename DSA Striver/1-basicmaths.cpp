@@ -1,4 +1,5 @@
 // 1. Count digits
+// TC - O(log10(n))
 // #include <bits/stdc++.h>
 // using namespace std; 
 // int count(int n){
@@ -19,6 +20,7 @@
 //     return 0;
 // }
 // OR
+// TC - O(1)
 // #include <bits/stdc++.h>
 // using namespace std; 
 // int main() {
@@ -74,16 +76,12 @@
 //     int n;
 //     cin>>n;
 //     int dup = n;
-//     int cnt = 0, ld = 0, ArmNum = 0;
-//     while(n > 0){
-//         cnt++;
-//         n = n/10;
-//     }
-//     n = dup;
+//     int ld = 0, ArmNum = 0;
+//     int cnt = (int)(log10(n)+1);
 //     while(n > 0){
 //         ld = n%10;
 //         n = n/10;
-//         ArmNum = ArmNum + pow(ld, cnt);
+//         ArmNum = ArmNum + (int)round(pow(ld, cnt));
 //     }
 //     if(ArmNum == dup) cout<<"Yes";
 //     else cout<<"No";
@@ -99,8 +97,8 @@
 //     vector<int> v;
 //     for(int i= 1; i <= sqrt(n); i++){
 //         if(n%i == 0){
-//             v.push_back(i);
-//             if(n / i != i) v.push_back(n / i);
+//             v.emplace_back(i);
+//             if(n / i != i) v.emplace_back(n / i);
 //         }
 //     }
 //     sort(v.begin(), v.end());

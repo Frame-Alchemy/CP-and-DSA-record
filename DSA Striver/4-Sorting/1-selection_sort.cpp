@@ -1,3 +1,8 @@
+//  The sorting method is like it will iterate
+// through the array, find min no. one after other
+// and swapping it with the iterators at the start 
+// one by one.
+// TC & SC - O(n^2)
 #include <bits/stdc++.h>
 using namespace std;
 
