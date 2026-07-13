@@ -1,3 +1,4 @@
+// Easy one...
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -9,7 +10,7 @@ int main(){
     while(t--){
         int n, k;
         cin>>n>>k;
-        vector<ll> a(n);
+        int a[n];
         for(int i=0; i < n; i++) cin>>a[i];
         
         if(k != 1) cout<<"YES"<<'\n';
